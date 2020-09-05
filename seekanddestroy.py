@@ -52,7 +52,7 @@ def seek(r):
 		time_diff = dt.datetime.today().timestamp() - start_time
 		if (i % LOG_EVERY_N) == 0:
 			print('Core :'+str(r)+" K/s = "+ str(i / time_diff))
-		#print ('Worker '+str(r)+':'+ str(i) + '.-  # '+pub + ' # -------- # '+ priv+' # ')
+		print ('Worker '+str(r)+':'+ str(i) + '.-  # '+pub + ' # -------- # '+ priv+' # ')
 		pub = pub + '\n'
 		filename = 'bit.txt'
 		with open(filename) as f:
